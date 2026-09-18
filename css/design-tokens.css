@@ -1,0 +1,56 @@
+/* ==========================================================================
+   KTRA SMART SOLUTIONS — DESIGN TOKENS & SYSTEM VARIABLES
+   ========================================================================== */
+
+:root {
+  /* Brand Primary Colors */
+  --ktra-bg: #070a13;
+  --ktra-bg-secondary: #0d1322;
+  --ktra-surface: #131c31;
+  --ktra-surface-hover: #18243e;
+  --ktra-surface-card: rgba(19, 28, 49, 0.75);
+  --ktra-glass-border: rgba(255, 255, 255, 0.08);
+  --ktra-glass-border-hover: rgba(56, 189, 248, 0.35);
+
+  /* Brand Accents */
+  --ktra-blue: #0284c7;
+  --ktra-blue-light: #38bdf8;
+  --ktra-cyan: #06b6d4;
+  --ktra-cyan-glow: rgba(6, 182, 212, 0.25);
+  
+  /* Product Accents */
+  --erp-accent: #0284c7;
+  --erp-glow: rgba(2, 132, 199, 0.25);
+  --aarasna-gold: #f59e0b;
+  --aarasna-gold-glow: rgba(245, 158, 11, 0.25);
+  --radio-purple: #8b5cf6;
+  --radio-purple-glow: rgba(139, 92, 246, 0.25);
+  --whatsapp-green: #25d366;
+  --whatsapp-glow: rgba(37, 211, 102, 0.3);
+
+  /* Text & Typography */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --font-arabic: 'Cairo', 'Tajawal', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Shadows & Elevations */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 30px rgba(14, 165, 233, 0.15);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout Boundaries */
+  --container-max-width: 1280px;
+  --header-height: 76px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 14px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 28px;
+}

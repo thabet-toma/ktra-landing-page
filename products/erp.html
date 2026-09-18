@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة K.T.R.A ERP | شركة كترا للحلول الذكية — دورة تشغيلية ومحاسبية متكاملة</title>
+  <meta name="description" content="K.T.R.A ERP: منصة عربية سحابية تربط الاستيراد، التكلفة المستوردة، المبيعات، المخزون، والمحاسبة في سير عمل واحد متماسك مع بوابة خاصة للمحاسب القانوني.">
+  <meta name="keywords" content="ERP, نظام محاسبي, إدارة المخزون, تكلفة الاستيراد, فواتير المبيعات, كترا للحلول الذكية, Ktra ERP">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="منصة K.T.R.A ERP السحابية | كترا للحلول الذكية">
+  <meta property="og:description" content="من أول شراء أو شحنة إلى الفاتورة والتقرير المالي: كل عملية مرتبطة، وكل قرار أمامك أوضح.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ktra-pro.tech/">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .product-hero {
+      padding: 5rem 0 4rem 0;
+      position: relative;
+    }
+    .product-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1.1rem;
+      background: rgba(2, 132, 199, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 9999px;
+      color: #38bdf8;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .features-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+    .feature-item-card {
+      background: var(--ktra-surface-card);
+      border: 1px solid var(--ktra-glass-border);
+      border-radius: var(--border-radius-lg);
+      padding: 2rem;
+      transition: all var(--transition-normal);
+    }
+    .feature-item-card:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      transform: translateY(-3px);
+    }
+    .feature-icon-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(2, 132, 199, 0.15);
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .screenshots-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .screenshot-item {
+      background: #000;
+      border: 1px solid var(--ktra-glass-border);
+      border-radius: var(--border-radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+    .screenshot-caption {
+      padding: 1rem 1.25rem;
+      background: var(--ktra-surface);
+      border-top: 1px solid var(--ktra-glass-border);
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+      margin-top: 3rem;
+    }
+    .faq-card {
+      background: var(--ktra-surface-card);
+      border: 1px solid var(--ktra-glass-border);
+      border-radius: var(--border-radius-lg);
+      padding: 2rem;
+    }
+    .faq-card h4 {
+      font-size: 1.15rem;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+    }
+    .faq-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    @media (max-width: 1024px) {
+      .features-grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .screenshots-gallery { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .features-grid-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-grid-pattern"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="../index.html" class="brand-logo">
+          <div class="logo-badge">K</div>
+          <div class="logo-text">
+            <span class="logo-title">كترا للحلول الذكية</span>
+            <span class="logo-subtitle">K.T.R.A ERP PLATFORM</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link">← العودة للرئيسية</a></li>
+          <li><a href="#overview" class="nav-link active">نظرة عامة</a></li>
+          <li><a href="#modules" class="nav-link">الوحدات التشغيلية</a></li>
+          <li><a href="#screens" class="nav-link">معرض الواجهات</a></li>
+          <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://ktra-pro.tech/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+            <span>دخول النظام الحي 🌐</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sub-Hero Section -->
+  <section id="overview" class="product-hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="product-hero-badge">
+          <span>📊</span>
+          <span>منصة ERP عربية سحابية متقدمة للشركات التجارية</span>
+        </div>
+        <h1 class="hero-title">
+          كل عملياتك التجارية.. في <span class="text-gradient">منصة واحدة واضحة</span>
+        </h1>
+        <p class="hero-desc">
+          اربط الاستيراد والمبيعات والمخزون والمحاسبة في دورة عمل واحدة، وانتقل من تشتّت ملفات Excel إلى رؤية دقيقة ولحظية تساعدك على النمو وحماية أرباحك.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://ktra-pro.tech/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+            <span>تجربة المنصة الحية الآن 🌐</span>
+          </a>
+          <a href="https://wa.me/972586812330?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%83%D8%AA%D8%B1%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B9%D8%B1%D8%B6%20%D8%AA%D9%88%D8%B6%D9%8A%D8%AD%D9%8A%20%D9%84%D9%85%D9%86%D8%B5%D8%A9%20KTRA%20ERP" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.12c-1.49 0-2.95-.4-4.23-1.16l-.3-.18-3.14.82.84-3.06-.2-.31a8.106 8.106 0 0 1-1.25-4.42c0-4.51 3.67-8.18 8.18-8.18 2.19 0 4.24.85 5.79 2.4 1.54 1.55 2.4 3.61 2.4 5.79 0 4.51-3.67 8.18-8.18 8.18zm4.49-6.13c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.65.81-.8 1-.15.19-.3.21-.55.08-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.39-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+            <span>احجز عرضاً توضيحياً عبر واتساب</span>
+          </a>
+        </div>
+
+        <div class="trust-strip" style="margin-top: 2.5rem;">
+          <div class="trust-item">✓ واجهة عربية RTL كاملة</div>
+          <div class="trust-item">✓ تعدد الفروع والشركات المستقلة</div>
+          <div class="trust-item">✓ صلاحيات دقيقة مقسمة حسب الدور</div>
+          <div class="trust-item">✓ بوابة متخصصة للمحاسب القانوني</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Solution Strip -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">الفلسفة التشغيلية</span>
+        <h2 class="section-title">ما يحدث في التشغيل اليومي ينعكس فوراً في أرقامك</h2>
+        <p class="section-desc">
+          لا إدخال متكرر للبيانات ولا تبادل ملفات مشتت. كل فاتورة أو استلام شحنة أو سند قبض يترك أثراً محاسبياً موثقاً يساعد الإدارة على اتخاذ القرارات فوراً.
+        </p>
+      </div>
+
+      <div class="features-grid-3">
+        <div class="feature-item-card">
+          <div class="feature-icon-circle">📦</div>
+          <h3>عملية موثقة من المصدر</h3>
+          <p class="card-desc">فاتورة شراء، إذن استلام بضاعة، أو حركة جردية تصدر برقم تسلسلي موثق.</p>
+        </div>
+        <div class="feature-item-card">
+          <div class="feature-icon-circle">🔄</div>
+          <h3>تحديث مترابط ولحظي</h3>
+          <p class="card-desc">تتحرك أرصدة المخزون، وحسابات العملاء، والتكلفة المستوردة فور اعتماد العملية.</p>
+        </div>
+        <div class="feature-item-card">
+          <div class="feature-icon-circle">📈</div>
+          <h3>قرار أسرع وأوضح</h3>
+          <p class="card-desc">ميزان المراجعة والتقارير المالية جاهزة في أي لحظة دون انتظار نهاية الشهر أو السنة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Modules -->
+  <section id="modules" class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">الوحدات المتكاملة</span>
+        <h2 class="section-title">منظومة شاملة تغطي كافة دورات التجارة</h2>
+        <p class="section-desc">صممت كل وحدة لتعمل بتناغم كامل مع باقي الوحدات لمنع أي تباين في الأرقام.</p>
+      </div>
+
+      <div class="features-grid-3">
+        <div class="feature-item-card">
+          <div class="feature-icon-circle">🚢</div>
+          <h3>الاستيراد والتكلفة المستوردة</h3>
+          <p class="card-desc">
+            تابع الصفقة والشحنة والتخليص والنقل حتى الوصول إلى التكلفة الحقيقية لكل منتج بعد توزيع مصاريف الجمارك والشحن بدقة.
+          </p>
+        </div>
+        <div class="feature-item-card">
+          <div class="feature-icon-circle">🧾</div>
+          <h3>المبيعات والفواتير والتحصيل</h3>
+          <p class="card-desc">
+            أنشئ عروض الأسعار، وأوامر البيع، وفواتير المبيعات مع دعم استلام النقد والشيكات ومتابعة رصيد العميل في شاشة واحدة.
+          </p>
+        </div>
+        <div class="feature-item-card">
+          <div class="feature-icon-circle">🏭</div>
+          <h3>المستودعات وحركات المخزون</h3>
+          <p class="card-desc">
+            إدارة تعدد المستودعات، الأرصدة الافتتاحية، حركات التحويل، ونقاط إعادة الطلب لمنع نفاد أي صنف.
+          </p>
+        </div>
+        <div class="feature-item-card">
+          <div class="feature-icon-circle">📑</div>
+          <h3>المحاسبة والقيود المالية</h3>
+          <p class="card-desc">
+            دليل حسابات شجري مرن، قيود يومية آلية ويدوية، ميزان مراجعة، وفترات ضريبية ومالية مغلقة ومحمية.
+          </p>
+        </div>
+        <div class="feature-item-card">
+          <div class="feature-icon-circle">🤝</div>
+          <h3>العملاء والموردون</h3>
+          <p class="card-desc">
+            ملف موحد لكل شريك تجاري يشمل بيانات الاتصال، كشف الحساب التفصيلي، وسجل الفواتير وسندات القبض والصرف.
+          </p>
+        </div>
+        <div class="feature-item-card">
+          <div class="feature-icon-circle">⚖️</div>
+          <h3>بوابة المحاسب القانوني</h3>
+          <p class="card-desc">
+            وصول مخصص ومقيد للمحاسب الخارجي لمراجعة المستندات والأرصدة الضريبية دون الحاجة لإرسال ملفات عبر البريد أو واتساب.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Gallery -->
+  <section id="screens" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">لقطات من واقع النظام</span>
+        <h2 class="section-title">واجهات عربية عملية ومريحة لفريق العمل</h2>
+        <p class="section-desc">تم تصميم الشاشات لتُظهر المعلومات الجوهرية قبل اتخاذ أي إجراء لتقليل أخطاء الإدخال.</p>
+      </div>
+
+      <div class="screenshots-gallery">
+        <div class="screenshot-item">
+          <img src="../assets/erp/sales-invoice-payment.png" alt="فاتورة مبيعات مع تسجيل النقد والشيك">
+          <div class="screenshot-caption">فاتورة مبيعات مع تسجيل نقد وشيك ورصيد العميل في سياق تشغيلي واحد.</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="../assets/erp/purchase-invoice-receipt.png" alt="فاتورة شراء واستلام المخزون">
+          <div class="screenshot-caption">فاتورة شراء تعرض الكميات المستلمة والمتبقية ومبالغ الدفع بدقة.</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="../assets/erp/inventory-opening-stock.png" alt="إدخال الرصيد الافتتاحي للمخزون">
+          <div class="screenshot-caption">إدخال رصيد افتتاحي للمنتجات مع تحديد المستودع والتكلفة والكمية.</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="../assets/erp/accounting-trial-balance.png" alt="ميزان المراجعة المحاسبي">
+          <div class="screenshot-caption">ميزان مراجعة فوري يؤكد توازن الحركات والمدين والدائن.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faq" class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">إجابات الخبراء</span>
+        <h2 class="section-title">الأسئلة الشائعة حول منصة K.T.R.A ERP</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h4>هل تدعم المنصة أكثر من شركة أو فرع؟</h4>
+          <p>نعم، تدعم المنصة مساحات عمل مستقلة تماماً للشركات والفروع مع عزل بيانات آمن وصلاحيات محددة لكل مستخدم.</p>
+        </div>
+        <div class="faq-card">
+          <h4>كيف تخدم المنصة شركات الاستيراد والتخليص؟</h4>
+          <p>تتضمن المنصة مساراً كاملاً لإدارة صفقات الاستيراد، وتوزيع مصاريف الشحن والتخليص الجمركي على تكلفة القطعة الواحدة بدقة.</p>
+        </div>
+        <div class="faq-card">
+          <h4>هل يمكن لمحاسبي الخارجي الدخول ومراجعة القيود؟</h4>
+          <p>بالتأكيد، توفر المنصة بوابة خاصة للمحاسب القانوني بصلاحيات قراءة ومراجعة مقيدة تمكنه من إنهاء مهامه دون تبادل ملفات غير آمن.</p>
+        </div>
+        <div class="faq-card">
+          <h4>هل الواجهة عربية بالكامل؟</h4>
+          <p>نعم، تجربة الاستخدام عربية بنسبة 100% من اليمين إلى اليسار (RTL) مع مصطلحات محاسبية وتجارية مألوفة لفريق عملك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>جاهز للانتقال إلى نظام تشغيل تجاري ومحاسبي متطور؟</h2>
+        <p>تواصل مع فريق كترا اليوم واحصل على جولة توضيحية مباشرة لنظام ERP مصممة خصيصاً لاحتياجات نشاطك التجاري.</p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://ktra-pro.tech/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+            <span>زيارة المنصة الحية (ktra-pro.tech) 🌐</span>
+          </a>
+          <a href="https://wa.me/972586812330?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%83%D8%AA%D8%B1%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B9%D8%B1%D8%B6%20%D8%AA%D9%88%D8%B6%D9%8A%D8%AD%D9%8A%20%D9%84%D9%86%D8%B8%D8%A7%D9%85%20ERP" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.12c-1.49 0-2.95-.4-4.23-1.16l-.3-.18-3.14.82.84-3.06-.2-.31a8.106 8.106 0 0 1-1.25-4.42c0-4.51 3.67-8.18 8.18-8.18 2.19 0 4.24.85 5.79 2.4 1.54 1.55 2.4 3.61 2.4 5.79 0 4.51-3.67 8.18-8.18 8.18zm4.49-6.13c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.65.81-.8 1-.15.19-.3.21-.55.08-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.39-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+            <span>احجز عرضاً تجريبياً عبر واتساب</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 شركة كترا للحلول الذكية (Ktra Smart Solutions). منصة K.T.R.A ERP.</p>
+        <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
+          <span style="color: var(--text-dim);">استكشف منتجاتنا الأخرى:</span>
+          <a href="aarasna.html" style="color: #fbbf24; font-weight: 700;">منصة وتطبيق أعراسنا 💍</a>
+          <a href="radio-news.html" style="color: #c084fc; font-weight: 700;">راديو وبوابة أخبار النقب 📻</a>
+        </div>
+        <a href="../index.html" style="color: var(--ktra-blue-light);">← العودة لصفحة كترا الرئيسية</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/972586812330?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%83%D8%AA%D8%B1%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%B5%D8%A9%20ERP" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="تواصل عبر واتساب">
+    <div class="whatsapp-icon-circle">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.12c-1.49 0-2.95-.4-4.23-1.16l-.3-.18-3.14.82.84-3.06-.2-.31a8.106 8.106 0 0 1-1.25-4.42c0-4.51 3.67-8.18 8.18-8.18 2.19 0 4.24.85 5.79 2.4 1.54 1.55 2.4 3.61 2.4 5.79 0 4.51-3.67 8.18-8.18 8.18zm4.49-6.13c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.65.81-.8 1-.15.19-.3.21-.55.08-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.39-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+    </div>
+    <span>استفسر عن ERP عبر واتساب</span>
+  </a>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
