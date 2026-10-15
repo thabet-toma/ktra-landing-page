@@ -74,4 +74,44 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 5. Social Hub Filter Tabs
+  const socialTabs = document.querySelectorAll('.social-tab-btn');
+  const socialCards = document.querySelectorAll('.social-card');
+
+  if (socialTabs.length > 0 && socialCards.length > 0) {
+    socialTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        socialTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const filter = tab.getAttribute('data-filter');
+        socialCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-brand') === filter) {
+            card.style.display = '';
+            card.style.animation = 'fadeInDown 0.3s ease forwards';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
+  // 6. Direct WhatsApp Consultation Builder
+  const inquiryForm = document.getElementById('quick-inquiry-form');
+  if (inquiryForm) {
+    inquiryForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('inquiry-name')?.value.trim() || 'عميل مهتم';
+      const service = document.getElementById('inquiry-service')?.value || 'استفسار عام';
+      const details = document.getElementById('inquiry-message')?.value.trim() || 'أرغب في الحصول على مزيد من التفاصيل.';
+
+      const text = `مرحباً شركة كترا للحلول الذكية،\n👤 الاسم: ${name}\n🎯 الخدمة / المنصة: ${service}\n📝 تفاصيل الاستفسار: ${details}`;
+      const encodedText = encodeURIComponent(text);
+      const url = `https://wa.me/972586812330?text=${encodedText}`;
+
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  }
 });
