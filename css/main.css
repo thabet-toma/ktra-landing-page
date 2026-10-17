@@ -703,38 +703,93 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Phone Mockups Showcase */
+.phones-showcase-container,
 .dual-phone-mockup {
-  display: flex;
-  gap: 1.25rem;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 0;
+  display: flex !important;
+  gap: 16px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 10px 0 !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
+  min-height: auto !important;
 }
 
+.phone-screen-box,
 .dual-phone-mockup .phone-frame {
-  max-width: 220px;
-  border-radius: 30px;
-  overflow: hidden;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7);
-  position: relative;
-  background: #111;
-  transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+  flex: 0 0 190px !important;
+  width: 190px !important;
+  max-width: 190px !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7) !important;
+  position: relative !important;
+  background: #000 !important;
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth) !important;
 }
 
+.phone-screen-box:hover,
 .dual-phone-mockup .phone-frame:hover {
-  transform: translateY(-4px) scale(1.02);
+  transform: translateY(-4px) scale(1.02) !important;
 }
 
-@media (max-width: 540px) {
+.phone-screen-box img,
+.dual-phone-mockup .phone-frame img,
+.card-mockup.dual-phone-mockup img,
+.card-mockup .phone-frame img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 420px !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.phone-screen-badge,
+.dual-phone-mockup .mockup-tag {
+  position: absolute !important;
+  bottom: 8px !important;
+  right: 8px !important;
+  left: 8px !important;
+  background: rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: blur(6px) !important;
+  color: #34d399 !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  padding: 4px 8px !important;
+  border-radius: 6px !important;
+  text-align: center !important;
+  border: 1px solid rgba(52, 211, 153, 0.3) !important;
+  z-index: 2 !important;
+}
+
+@media (max-width: 640px) {
+  .phones-showcase-container,
   .dual-phone-mockup {
-    gap: 0.75rem;
+    gap: 10px !important;
   }
+  .phone-screen-box,
   .dual-phone-mockup .phone-frame {
-    max-width: 150px;
-    border-radius: 20px;
+    flex: 0 1 150px !important;
+    width: 150px !important;
+    max-width: 150px !important;
+    border-radius: 20px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .phones-showcase-container,
+  .dual-phone-mockup {
+    gap: 8px !important;
+  }
+  .phone-screen-box,
+  .dual-phone-mockup .phone-frame {
+    flex: 0 1 135px !important;
+    width: 135px !important;
+    max-width: 135px !important;
+    border-radius: 16px !important;
   }
 }
 
